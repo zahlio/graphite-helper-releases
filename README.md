@@ -1,2 +1,45 @@
-# graphite-helper-releases
-Release artifacts for Graphite Helper
+# Graphite Helper
+
+**Your personal inbox for GitHub pull requests.** Stop context-switching between tabs, notifications, and Slack messages — Graphite Helper brings everything into one fast, native macOS app that lives in your menu bar.
+
+## Why Graphite Helper?
+
+GitHub's notification system is noisy. Important review requests get buried. Comments go unread. You miss the PR that's been waiting on you for two days.
+
+Graphite Helper fixes this:
+
+- **Unified PR inbox** — Every pull request you're involved in, organized by what needs your attention
+- **Live comment threads** — Read and reply to review comments without leaving the app
+- **Smart sections** — Custom filters to group PRs by state, review status, CI, repo, author, and more
+- **Menu bar at a glance** — See your PR counts directly in the macOS tray, organized by section
+- **Linear integration** — Link issues and track status alongside your PRs
+- **Analytics** — Understand your review cadence and response times
+- **Keyboard-first** — Navigate, triage, and reply without touching the mouse
+- **Works with Graphite & GitHub** — One-click to open any PR in your preferred platform
+
+Built with Electron. Runs natively on Apple Silicon. Updates itself automatically.
+
+## Install
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/zahlio/graphite-helper-releases/main/install.sh | bash
+```
+
+That's it. The app installs to `/Applications` and launches automatically.
+
+### Requirements
+
+- macOS on Apple Silicon (M1/M2/M3/M4)
+- A GitHub personal access token (the app will guide you through setup)
+
+### Updating
+
+Graphite Helper checks for updates automatically every 30 minutes. You can also check manually from the app menu: **Graphite Helper → Check for Updates...**
+
+Updates are downloaded and applied seamlessly — no re-download, no quarantine warnings.
+
+## Uninstall
+
+```bash
+rm -rf "/Applications/Graphite Helper.app"
+```
